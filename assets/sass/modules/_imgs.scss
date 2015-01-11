@@ -1,0 +1,29 @@
+/**
+ * _imgs.scss
+ * Global Image values
+ * Default captions e.t.c
+ */
+
+// Responsive Images
+
+img{ 
+    width: auto;  /* IE8 Fix */
+    max-width: 100%; 
+    height: auto;
+}  
+
+a img{
+    border: 0;
+}
+
+figure{
+   
+}
+
+    figcaption{
+        
+    }
+
+    figure img{
+        
+    }

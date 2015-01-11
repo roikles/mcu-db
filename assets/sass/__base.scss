@@ -1,0 +1,69 @@
+/**
+ * __base.scss
+ * Main configuration
+ */
+
+// Media Queries
+// Define breakpoints as a sass list
+// Here we use s,m,l,xl to identify breakpoints 
+// but you can use whatever you like.   
+$mq_small_min:          null;
+$mq_small_max:          null;
+
+// Alias
+$s: ($mq_small_min, $mq_small_max);
+
+$mq_medium_min:         800px;
+$mq_medium_max:         null;
+
+// Alias
+$m: ($mq_medium_min, $mq_medium_max);
+
+$mq_large_min:          1000px;
+$mq_large_max:          null;
+
+// Alias
+$l: ($mq_large_min, $mq_large_max);
+
+$mq_extralarge_min:     1200px;
+$mq_extralarge_max:     null;
+
+// Alias
+$xl: ($mq_extralarge_min,$mq_extralarge_max);
+
+// Project size defaults
+
+// Base size (used to maintain consistent 
+// sizing of borders, margins etc across the project)
+$base:                  2.4rem;
+
+// Line height
+$line-height:           1.5;
+
+// Box sizing
+$border_box:            true;
+
+// Base font sizes for different media queries
+$font_size:             50%;
+$font_size_m:           62.5%;
+$font_size_l:           62.5%;
+$font_size_xl:          75%;
+
+// Font Sizes
+$size_h1:               3.6rem;
+$size_h2:               2.4rem; 
+$size_h3:               1.8rem;
+
+$size_p:                1.5rem;
+$size_primo:            1.8rem;
+$size_small:            1.2rem;
+
+// Font Weights
+$light:                 300;
+$medium:                400;
+$semibold:              600;
+$bold:                  700;
+
+// Font Stack
+$heading_font:          Helvetica, Arial, sans-serif;
+$body_font:             $heading_font;

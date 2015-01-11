@@ -1,0 +1,57 @@
+/*
+Theme Name:     Flexbones
+Theme URI:      http://github.com/roikles/flexbones
+Description:    A responsive wordpress starter theme
+Author:         Rory Ashford
+Author URI:     http://roikles.com
+Version:        2.0.0
+License:        All work is the property of Rory Ashford
+License URI:    n/a
+*/
+
+/**
+    ________          __                         
+   / ____/ /__  _  __/ /_  ____  ____  ___  _____
+  / /_  / / _ \| |/_/ __ \/ __ \/ __ \/ _ \/ ___/
+ / __/ / /  __/>  </ /_/ / /_/ / / / /  __(__  ) 
+/_/   /_/\___/_/|_/_.___/\____/_/ /_/\___/____/  
+                                                 
+ */
+
+// Partials
+// Mixins, functions and configs that dont produce output
+
+// Global Configuration
+@import "__base.scss";
+@import "__colours.scss";
+
+@import "partial/_clearfix.scss";
+@import "partial/_gridtacular.scss";
+@import "partial/_rem.scss";
+@import "partial/_fluid-bg.scss";
+@import "partial/_aspect-ratios.scss";
+
+// Modules
+// module components, modular and reuseable
+@import "modules/_reset.scss";
+@import "modules/_wrapper.scss";
+@import "modules/_grid-setup.scss";
+@import "modules/_typography.scss";
+@import "modules/_buttons.scss";
+@import "modules/_clear.scss";
+@import "modules/_forms.scss";
+@import "modules/_imgs.scss";
+@import "modules/_navigation.scss";
+@import "modules/_tables.scss";
+
+// Section
+// Styles for pages an elements that are not very reuseable
+@import "section/_html-body.scss";
+@import "section/_header.scss";
+@import "section/_footer.scss";
+@import "section/_sidebar.scss";
+@import "section/_belt.scss";
+@import "section/_box.scss";
+@import "section/_billboard.scss";
+@import "section/_primo.scss";
+@import "section/_character-list.scss";

@@ -1,0 +1,37 @@
+// character list
+
+.people{}
+	
+	.people__list{
+		display: block;
+		list-style: none;
+		margin: 0;
+	}
+	
+		.people__person{
+			position: relative;
+			background-repeat: no-repeat;
+			background-size: cover;
+			&:before{
+				content: "";
+				background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0.7));
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+			@include aspect-ratio(2,1);
+		}
+	
+			.people__person__title{
+				position: absolute;
+				bottom:0;
+				right:0;
+				text-align: right;
+				color: #fff;
+				padding: 2rem;
+				h2,h3{
+					margin:0;
+				}
+			}

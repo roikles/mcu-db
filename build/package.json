@@ -1,0 +1,26 @@
+{
+  "name": "Flexbones",
+  "version": "0.1.0",
+  "description": "Build everything using NPM",
+  "author": "Rory Ashford <rory@roikles.com>",
+  "scripts": {
+    "compile-sass": "node-sass --output-style expanded --source-map ../assets/style.css.map ../assets/sass/style.scss ../assets/style.css && autoprefixer ../assets/style.css",
+    "build-js": "find ../assets/js/ -name '*.js' | xargs cat | uglifyjs -o ../assets/scripts.min.js",
+    "optimise-images": "imageoptim -d ../assets/imgs",
+    "svg-to-png": "svg2png ../assets/imgs",
+    "build-images": "npm run svg-to-png && npm run optimise-images",
+    "watch-sass": "fsmonitor -d '../assets/sass' -s '+*.scss'  npm run compile-sass",
+    "watch-js": "fsmonitor -d '../assets/js' -s '+*.js'  npm run build-js",
+    "watch": "livereload & npm run watch-sass && npm run watch-js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^4.0.0",
+    "fsmonitor": "^0.2.4",
+    "imageoptim-cli": "^1.11.4",
+    "node-sass": "^1.2.3",
+    "sass": "^0.5.0",
+    "svg2png": "^1.1.0",
+    "svg2png-cli": "^1.1.1",
+    "uglify-js": "^2.4.15"
+  }
+}

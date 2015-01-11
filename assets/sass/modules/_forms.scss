@@ -1,0 +1,36 @@
+/**
+ * _forms/scss
+ * Bassic form css setup
+ */
+
+// Label
+
+label {
+    display: block;
+}
+
+input, 
+select, 
+textarea{
+    font-family: inherit;
+    outline: none;
+}
+
+input{
+    display: inline-block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    &:focus{
+        background: #f7f6f6;
+    }
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc; 
+    &:focus{
+        background: #f7f6f6;
+    }
+}
